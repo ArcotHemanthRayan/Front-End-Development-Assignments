@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dividing Of Two Numbers</title>
+    <style type="text/css">
+        body {
+          margin: 30px;
+        }
+      </style>
+</head>
+<body>
+    <h1 style="color: blueviolet; text-align: center;">Dividing Two Numbers</h1>
+    <form style="text-align: center;">
+      Enter First Number   : <input type="text"
+      id="firstNumber" /><br><br>
+      Enter Second Number: <input type="text" 
+      id="secondNumber" /><br><br>
+      <input type="button" onClick="divideBy()" style="background-color: green; color: white;"
+       Value="Divide" />
+    </form>
+    
+    <p style="text-align: center; color: gray;">Division Of Two Numbers Is : 
+      <span id = "result"></span>
+    </p>
+    
+    
+    <script>
+      function divideBy() 
+      { 
+        num1 = document.getElementById(
+          "firstNumber").value;
+        num2 = document.getElementById(
+          "secondNumber").value;
+        document.getElementById(
+          "result").innerHTML = num1 / num2;
+      }
+    </script>
+</body>
+</html>
